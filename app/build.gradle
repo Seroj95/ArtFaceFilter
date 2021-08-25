@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+
 }
 
 android {
@@ -52,10 +53,26 @@ dependencies {
     implementation 'com.makeramen:roundedimageview:2.3.0'
     //Gpu image
     implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
-    //Koin->dependenci injecton
-//    implementation "org.koin:koin-androidx-viewmodel:2.0.0"
 
+    //Koin->dependenci injecton
+//    implementation 'org.koin:koin-androidx-viewmodel:2.0.1'
+//    implementation "org.koin:koin-android:1.0.2"
     //ViewModel
 
-//    implementation "androidx.lifecycle.lifecycle-viewmodel-ktx:2.3.1"
+//    implementation 'androidx.lifecycle.lifecycle-viewmodel-ktx:2.3.1'
+
+//    implementation 'org.koin:koin-androidx-viewmodel:2.2.1'
+//    implementation "org.koin:koin-android:2.2.1"
+//    implementation 'org.koin:koin-android:1.0.2'
+//    implementation 'org.koin:koin-android-viewmodel:1.0.2'
+//    implementation 'org.koin:koin-androidx-scope:1.0.2'
+
+    // Koin main features for Android (Scope,ViewModel ...)
+    implementation "io.insert-koin:koin-android:${koin_version}"
+    // Koin Android - experimental builder extensions
+    implementation "io.insert-koin:koin-android-ext:${koin_version}"
+    // Koin for Jetpack WorkManager
+    implementation "io.insert-koin:koin-androidx-workmanager:${koin_version}"
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0-alpha03")
 }

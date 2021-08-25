@@ -1,9 +1,10 @@
-package com.ser.artface
+package com.ser.artface.activitys.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import com.ser.artface.activitys.editimage.EditImageActivity
 import com.ser.artface.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
