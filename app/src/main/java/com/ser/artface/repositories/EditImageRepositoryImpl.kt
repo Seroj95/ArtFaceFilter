@@ -410,6 +410,27 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             )
         }
 
+        //Armine
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                2.0f, -0.0831f, 0.1883f, 0.0f,
+                0.0f, 1.0f, 0.2f, 0f,
+                -0.8961f, 0.0f, 1.0f, 0f,
+                0f, 0f, 1f, 1f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "Armine",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
         //endregion
 return imageFilters
     }
