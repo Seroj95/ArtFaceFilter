@@ -10,5 +10,6 @@
     <color name="landingBackgraundCenter">#040303</color>
     <color name="landingBackgraundEnd">#040303</color>
     <color name="buttonEditNewImage">#040303</color>
+    <color name="black">#000</color>
 
 </resources>

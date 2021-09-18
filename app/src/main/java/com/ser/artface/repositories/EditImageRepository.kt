@@ -6,7 +6,7 @@ import com.ser.artface.data.ImageFilter
 import java.util.logging.Filter
 
 interface EditImageRepository {
-    suspend fun preaperImagePrewie(imageUri: Uri):Bitmap?
-suspend fun getImageFilters(image:Bitmap):List<ImageFilter >
-
+    suspend fun preaperImagePrewie(imageUri: Uri): Bitmap?
+    suspend fun getImageFilters(image: Bitmap): List<ImageFilter>
+    suspend fun savedFilteredImage(filteredBitmap: Bitmap): Uri?
 }

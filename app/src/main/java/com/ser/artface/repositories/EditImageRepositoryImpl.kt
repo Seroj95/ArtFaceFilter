@@ -4,10 +4,15 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
+import android.os.Environment
+import androidx.core.content.FileProvider
 import com.ser.artface.data.ImageFilter
 import jp.co.cyberagent.android.gpuimage.GPUImage
 import jp.co.cyberagent.android.gpuimage.filter.*
+import java.io.File
+import java.io.FileOutputStream
 import java.io.InputStream
+import java.lang.Exception
 import java.util.ArrayList
 
 class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
@@ -431,6 +436,26 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
         }
 
 
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                1.0f, 0.5f, 0.0f, 0.0f,
+                0.0f, 1.0f, 0.2f, 0.0f,
+                0.1f, 0.1f, 1.0f, 0.0f,
+                1.0f, 0.0f, 1.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "Grig",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
         //endregion
 return imageFilters
     }
@@ -452,4 +477,28 @@ return imageFilters
 
     }
 
+    override suspend fun savedFilteredImage(filteredBitmap: Bitmap): Uri? {
+return  try {
+val mediStoreageDirectory=File(
+    context.getExternalFilesDir(Environment.DIRECTORY_PICTURES),
+    "Saved Images"
+)
+    if (!mediStoreageDirectory.exists()){
+        mediStoreageDirectory.mkdirs()
+    }
+    val fileName="IMG_${System.currentTimeMillis()}.jpg"
+    val file=File(mediStoreageDirectory,fileName)
+    saveFile(file,filteredBitmap)
+    FileProvider.getUriForFile(context,"${context.packageName}.provider",file)
+}catch (exception:Exception){
+    null
+}
+    }
+    private fun saveFile(file: File,bitmap: Bitmap){
+        with(FileOutputStream(file)){
+            bitmap.compress(Bitmap.CompressFormat.JPEG,100,this)
+            flush()
+            close()
+        }
+    }
 }
