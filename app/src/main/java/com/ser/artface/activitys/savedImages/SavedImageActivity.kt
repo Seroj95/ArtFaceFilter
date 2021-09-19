@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.ser.artface.R
+import com.ser.artface.adapters.SavedImagesAdapter
 import com.ser.artface.databinding.ActivitySavedImageBinding
 import com.ser.artface.utilites.displayToast
 import com.ser.artface.viewmodels.SavedImagesViewModel
@@ -27,7 +28,14 @@ class SavedImageActivity : AppCompatActivity() {
                 if (savedImagesDataState.isLoading) View.VISIBLE else View.GONE
             savedImagesDataState.savedImages?.let {
                 savedImagesDataState.savedImages?.let {  savedImages->
-                    displayToast("${savedImages.size}images loaded")
+//                    displayToast("${savedImages.size}images loaded")
+                    SavedImagesAdapter(savedImages).also { adapter ->
+                        with(binding.savedImagesRecyclerView){
+                            this.adapter=adapter
+                            visibility=View.VISIBLE
+
+                        }
+                    }
                 }?: run { savedImagesDataState.error?.let{ error -> displayToast(error) } }
             }
         })
