@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import com.ser.artface.activitys.editimage.EditImageActivity
+import com.ser.artface.activitys.savedImages.SavedImageActivity
 import com.ser.artface.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -31,10 +32,15 @@ class MainActivity : AppCompatActivity() {
                 startActivityForResult(pickerIntent, REQUEST_CODE_PICK_IMAGE)
             }
         }
+        binding.buttonViewSavedImages.setOnClickListener {
+            Intent(applicationContext,SavedImageActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityReenter(resultCode, data)
+        super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == REQUEST_CODE_PICK_IMAGE && resultCode == RESULT_OK) {
             data?.data?.let { imageUri ->
                 Intent(applicationContext, EditImageActivity::class.java).also { editImageIntent ->

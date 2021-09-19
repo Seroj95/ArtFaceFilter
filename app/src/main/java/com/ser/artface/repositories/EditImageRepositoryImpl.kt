@@ -456,6 +456,26 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
         }
 
 
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                1.0f, 0.3f, 0.0f, 0.1f,
+                0.2f, 1.0f, 0.6f, 0.0f,
+                0.1f, -0.1f, 1.0f, 0.0f,
+                1.0f, 1.0f, 1.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "CR7",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
         //endregion
 return imageFilters
     }

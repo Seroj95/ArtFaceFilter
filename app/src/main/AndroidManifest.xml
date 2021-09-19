@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArtFace">
         <activity
+            android:name=".activitys.savedImages.SavedImageActivity"
+            android:exported="true" />
+        <activity
             android:name=".activitys.filteredImage.FilteredImageActivity"
             android:exported="true" />
         <activity
