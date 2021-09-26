@@ -3,13 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ArtFaceFilter/app/src/main/res/font/nosifer.xml" value="0.14537037037037037" />
         <entry key="..\:/ArtFaceFilter/app/src/main/res/layout/activity_edit_image.xml" value="0.20416666666666666" />
         <entry key="..\:/ArtFaceFilter/app/src/main/res/layout/activity_filtered_image.xml" value="0.20416666666666666" />
         <entry key="..\:/ArtFaceFilter/app/src/main/res/layout/activity_gdactivity.xml" value="0.20416666666666666" />
         <entry key="..\:/ArtFaceFilter/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/ArtFaceFilter/app/src/main/res/layout/activity_saved_image.xml" value="0.20416666666666666" />
+        <entry key="..\:/ArtFaceFilter/app/src/main/res/layout/activity_splash.xml" value="0.19010416666666666" />
         <entry key="..\:/ArtFaceFilter/app/src/main/res/layout/item_container_filter.xml" value="0.20416666666666666" />
+        <entry key="..\:/ArtFaceFilter/app/src/main/res/layout/item_container_saved_image.xml" value="0.20416666666666666" />
         <entry key="..\:/ArtFaceFilter/app/src/main/res/layout/item_containet_saved_image.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Seroj/Desktop/ArtFaceFilter/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1398148148148148" />
+        <entry key="..\:/Users/Seroj/Desktop/ArtFaceFilter/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1398148148148148" />
+        <entry key="..\:/Users/Seroj/Desktop/ArtFaceFilter/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1398148148148148" />
+        <entry key="..\:/Users/Seroj/Desktop/ArtFaceFilter/app/src/main/res/layout/activity_edit_image.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Seroj/Desktop/ArtFaceFilter/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/artface/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/artface/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/artface/app/src/main/res/drawable/landing_backgraund.xml" value="0.1945" />

@@ -428,7 +428,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "Armine",
+                    name = "Sunflowers",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -488,7 +488,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "AR",
+                    name = "Armine",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -549,12 +549,35 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "aaaa",
+                    name = "ARH",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
             )
         }
+
+
+        //
+        GPUImageColorMatrixFilter(
+            0.9f,
+            floatArrayOf(
+                0.3f, 0.2f, 0.6f, 0.0f,
+                0.1f, 0.5f, 1.0f, 0.0f,
+                0.05f, 0.2f, 0.3f, 0.4f,
+                1.0f, 1.0f, 1.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "ARH",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+//
+
 
 
         GPUImageColorMatrixFilter(
@@ -569,7 +592,396 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "gg",
+                    name = "Blanco",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                1.0f, 0.01f, 0.0f, 0.0f,
+                0.0f, 0.02f, 0.2f, 0.0f,
+                0.1f, 0.1f, 1.0f, 0.0f,
+                0.0f, 0.0f, 0.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "Coneflowers",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                0.0f, 0.01f, 0.0f, 0.0f,
+                0.0f, 0.02f, 0.2f, 0.0f,
+                0.1f, 0.1f, 1.0f, 0.1f,
+                0.0f, 0.0f, 0.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "Azur",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+        GPUImageColorMatrixFilter(
+            0.9f,
+            floatArrayOf(
+                0.1f, 0.5f, 0.4f, 0.0f,
+                0.0f, 0.3f, 1.0f, 0.0f,
+                0.02f, 0.01f, 0.1f, 0.2f,
+                1.0f, 1.0f, 1.0f, 0.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "Gyumri",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+        // Desert
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                0.8f, 0.6f, 0.2f, 0.09f,
+                0.0f, 0.4f, 0.3f, 0.08f,
+                0.2f, 0.3f, 0.4f, 0.08f,
+                0.0f, 0.0f, 0.1f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "1",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+
+        // Desert
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                0.2f, 0.0f, 0.2f, 0.05f,
+                0.0f, 0.2f, 0.1f, 0.05f,
+                0.1f, 0.3f, 0.5f, 0.08f,
+                0.0f, 0.0f, 0.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "2",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+
+
+        // Desert
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                0.4f, 0.4f, 0.2f, 0.05f,
+                0.4f, 0.8f, 0.2f, 0.05f,
+                0.4f, 0.3f, 0.1f, 0.08f,
+                0.0f, 0.0f, 0.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "3",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                1.0f, 1.0f, 0.0f, 0.0f,
+                0.0f, 1.0f, 0.0f, 1.0f,
+                0.0f, 0.64f, 0.5f, 0.0f,
+                0.0f, 0.0f, 6.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "4",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                3.0f, 1.0f, 0.0f, 0.0f,
+                3.0f, 1.0f, 0.0f, 0.0f,
+                0.0f, 0.64f, 4.5f, 0.0f,
+                0.0f, 0.0f, 6.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "5",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                0.8f, 1.0f, 0.0f, 0.0f,
+                0.0f, 1.2f, 0.0f, 0.0f,
+                0.0f, 0.64f, 0.5f, 0.0f,
+                0.0f, 0.0f, 0.1f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "6",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                0.0f, 1.0f, 0.0f, 0.8f,
+                0.0f, 1.0f, 0.0f, 0.02f,
+                0.0f, 0.64f, 0.5f, 0.0f,
+                0.0f, 1.0f, 0.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "7",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                0.06f, 1.0f, 0.0f, 0.01f,
+                0.09f, 1.0f, 0.0f, 0.0f,
+                0.0f, 0.64f, 0.5f, 0.01f,
+                0.0f, 0.0f, 0.0f, 1.01f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "8",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                0.0f, 1.0f, 0.0f, 0.08f,
+                0.0f, 1.0f, 0.0f, 0.0f,
+                0.1f, 0.64f, 0.5f, 0.06f,
+                0.0f, 0.0f, 0.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "9",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                2.0f, 1.0f, 0.0f, 0.0f,
+                0.0f, 1.0f, 0.0f, 0.08f,
+                0.0f, 0.64f, 0.5f,1.0f,
+                0.0f, 0.0f, 0.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "10",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                0.0f, 1.0f, 1.0f, 0.0f,
+                0.0f, 1.0f, 0.0f, 0.0f,
+                0.0f, 0.64f, 1.5f, 0.0f,
+                0.0f, 0.0f, 0.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "11",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+        GPUImageColorMatrixFilter(
+            2.0f,
+            floatArrayOf(
+                0.0f, 0.0f, 0.0f, 0.0f,
+                0.0f, 1.0f, 0.0f, 0.1f,
+                0.05f, 0.64f, 0.2f, 0.0f,
+                0.0f, 0.0f, 0.1f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "12",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                0.1f, 1.0f, 4.01f, 0.0f,
+                0.0f, 1.0f, 0.0f, 0.01f,
+                1.0f, 0.64f, 0.5f, 0.0f,
+                0.0f, 0.025f, 0.02f, 0.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "13",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                1.08f, 0.01f, 0.06f, 0.01f,
+                0.09f, 1.02f, 0.2f, 0.09f,
+                0.1f, 0.1f, 1.04f, 0.07f,
+                1.09f, 0.01f, 0.01f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "14",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                1.09f, 0.04f, 0.06f, 0.07f,
+                0.02f, 1.01f, 0.29f, 0.07f,
+                0.11f, 0.1f, 1.0f, 0.0f,
+                1.02f, 0.0f, 0.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "15",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+        GPUImageColorMatrixFilter(
+            1.0f,
+            floatArrayOf(
+                1.0f, 0.0f, 0.0f, 0.0f,
+                0.0f, 1.0f, 0.2f, 0.0f,
+                0.1f, 0.1f, 1.0f, 0.0f,
+                1.0f, 0.0f, 0.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "16",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
