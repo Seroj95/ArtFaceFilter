@@ -468,7 +468,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "CR7",
+                    name = "QE",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -570,7 +570,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "ARH",
+                    name = "Val",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -654,7 +654,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "Gyumri",
+                    name = "Yumr",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -675,7 +675,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "1",
+                    name = "Rosa",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -697,7 +697,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "2",
+                    name = "Violeta",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -720,7 +720,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "3",
+                    name = "NY",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -740,7 +740,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "4",
+                    name = "Rio",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -752,16 +752,16 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
         GPUImageColorMatrixFilter(
             1.0f,
             floatArrayOf(
-                3.0f, 1.0f, 0.0f, 0.0f,
-                3.0f, 1.0f, 0.0f, 0.0f,
-                0.0f, 0.64f, 4.5f, 0.0f,
-                0.0f, 0.0f, 6.0f, 1.0f
+                2.0f, 1.0f, 0.0f, 0.0f,
+                1.0f, 1.0f, 0.0f, 0.0f,
+                0.0f, 0.64f, 2.0f, 0.0f,
+                0.0f, 0.0f, 2.0f, 1.0f
             )
         ).also { filter ->
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "5",
+                    name = "Madrid",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -782,7 +782,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "6",
+                    name = "Stoch",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -804,7 +804,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "7",
+                    name = "Nikiforova",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -826,7 +826,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "8",
+                    name = "Sogh",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -846,7 +846,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "9",
+                    name = "Tokio",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -864,7 +864,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "10",
+                    name = "Alfo",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -882,7 +882,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "11",
+                    name = "Ban",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -902,7 +902,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "12",
+                    name = "Verde",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -911,24 +911,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
 
 
 
-        GPUImageColorMatrixFilter(
-            1.0f,
-            floatArrayOf(
-                0.1f, 1.0f, 4.01f, 0.0f,
-                0.0f, 1.0f, 0.0f, 0.01f,
-                1.0f, 0.64f, 0.5f, 0.0f,
-                0.0f, 0.025f, 0.02f, 0.0f
-            )
-        ).also { filter ->
-            gpuImage.setFilter(filter)
-            imageFilters.add(
-                ImageFilter(
-                    name = "13",
-                    filter = filter,
-                    filterPreview = gpuImage.bitmapWithFilterApplied
-                )
-            )
-        }
+
 
 
         GPUImageColorMatrixFilter(
@@ -943,7 +926,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "14",
+                    name = "CR7",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -962,7 +945,7 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "15",
+                    name = "Lee",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
@@ -981,12 +964,73 @@ class EditImageRepositoryImpl(private val context:Context):EditImageRepository {
             gpuImage.setFilter(filter)
             imageFilters.add(
                 ImageFilter(
-                    name = "16",
+                    name = "Averina",
                     filter = filter,
                     filterPreview = gpuImage.bitmapWithFilterApplied
                 )
             )
         }
+
+
+        GPUImageColorMatrixFilter(
+            0.9f,
+            floatArrayOf(
+                0.8f, 0.7f, 0.2f, 0.089f,
+                0.0f, 0.1f, 1.0f, 0.01f,
+                0.05f, 0.10f, 0.2f, 0.3f,
+                1.01f, 1.02f, 1.0f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "CH",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
+        GPUImageColorMatrixFilter(
+            0.9f,
+            floatArrayOf(
+                0.1f, 0.8f, 0.2f, 0.0f,
+                0.0f, 0.2f, 1.0f, 0.0f,
+                0.05f, 0.10f, 0.24f, 0.4f,
+                1.0f, 1.0f, 1.02f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "London",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+        GPUImageColorMatrixFilter(
+            0.9f,
+            floatArrayOf(
+                0.3f, 0.3f, 0.2f, 0.08f,
+                0.0f, 0.3f, 1.01f, 0.04f,
+                0.05f, 0.10f, 0.3f, 0.4f,
+                1.0f, 1.0f, 1.02f, 1.0f
+            )
+        ).also { filter ->
+            gpuImage.setFilter(filter)
+            imageFilters.add(
+                ImageFilter(
+                    name = "Leeds",
+                    filter = filter,
+                    filterPreview = gpuImage.bitmapWithFilterApplied
+                )
+            )
+        }
+
+
         //endregion
 return imageFilters
     }

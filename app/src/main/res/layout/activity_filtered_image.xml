@@ -22,9 +22,9 @@
         android:layout_marginEnd="@dimen/_25sdp"
         android:layout_marginRight="@dimen/_25sdp"
         android:layout_marginBottom="@dimen/_25sdp"
-        android:backgroundTint="@color/primaryDark"
+        android:backgroundTint="#3F51B5"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_share"
+        android:src="@drawable/add_link"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:tint="@color/with"/>
